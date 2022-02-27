@@ -42,6 +42,8 @@ class Check(threading.Thread):
                         with open('./hit.txt', 'a+') as f:
                             f.write(f'{self.email}:{self.password}\n')
                         break
+                    elif 'Your IP' in response.text: # Cloudfare ip ban
+                        return
                     else:
                         Console.printf(f'[-] Bad: {self.email}:{self.password}')
                         break
