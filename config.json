@@ -1,0 +1,6 @@
+{
+    "threads": 50,
+    "path_proxies": "proxies.txt",
+    "path_combo": "combo.txt",
+    "proxy_timeout": 5
+}
